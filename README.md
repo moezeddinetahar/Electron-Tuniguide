@@ -36,6 +36,6 @@ To run this application locally, follow these steps:
   
 Note: The 'node_modules' folder is required for the execution of the project !
 
-Feel free to explore and interact with the different sections of the website. If you encounter any issues, please reach out for support. Enjoy!
+Feel free to explore and interact with the different features of the application. If you encounter any issues, please reach out for support. Enjoy!
       
 
