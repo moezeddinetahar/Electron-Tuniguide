@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  </head>
+  <style>
+
+.taxi {
+  background: url(TAXI.webp) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.taxi::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.taxi .section-title h2 {
+  color: #fff;
+}
+
+.taxi .container {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .taxi {
+    background-attachment: fixed;
+  }
+}
+
+.taxi .taxi-carousel {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+}
+
+.taxi .event-item {
+  color: #fff;
+}
+
+.taxi .event-item h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #cda45e;
+}
+
+.taxi .event-item .price {
+  font-size: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.taxi .event-item .img-fluid{
+
+    max-width: 100%;
+    height: -webkit-fill-available;
+}
+
+.taxi .event-item .price span {
+  border-bottom: 2px solid #cda45e;
+}
+.sous-titre {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #a4a4a4;
+}
+
+
+.taxi .event-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.taxi .event-item ul li {
+  padding-bottom: 10px;
+}
+
+.taxi .event-item ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #cda45e;
+}
+
+.taxi .event-item p:last-child {
+  margin-bottom: 0;
+}
+
+.taxi .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.taxi .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.taxi .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #cda45e;
+}
+.consult {
+    border-color: blue;
+    text-decoration: none;
+    background: #fff;
+  }
+  .consult-art{
+    color: blue;
+    text-decoration: none;
+  }
+
+  </style>
+<section id="taxi" class="taxi">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <div class="d-flex align-items-center justify-content-between">
+        <h2>Taxi Services</h2>
+        <button class="consult"><a class="consult-art" href="../renderer/home/tt.html" >Return to home page</a></button>
+      </div>
+      <div class="sous-titre">
+      <p><span>Explore different taxi options for your travel needs.</span></p>
+    </div>
+    </div>
+
+    <div class="taxi-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">  
+
+        <div class="swiper-slide">
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <img src="bolt.jfif" class="img-fluid" alt="Bolt Taxi">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Bolt</h3>
+              <div class="price">
+                <p><span>Varies</span></p>
+              </div>
+              <p class="fst-italic">Request in seconds, ride in minutes.</p>
+              <ul>
+                <li><i class="bi bi-check-circled"></i> Bolt is a safe and reliable ride-hailing service available at the tap of a button.</li>
+                <li><i class="bi bi-check-circled"></i> Order a ride and get picked up by a top-rated driver in more than 500 cities worldwide.</li>
+              </ul>
+              <p>Bolt provides convenient transportation options for your daily commute or travel needs.</p>
+              <button class="consult"><a class="consult-art" href="https://bolt.eu/fr-tn/" target="_blank">Visit website</a></button>
+
+            </div>
+          </div>
+        </div><!-- End Bolt Taxi -->
+
+        <div class="swiper-slide">
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <img src="shared_taxi.jpg" class="img-fluid" alt="Shared Taxis">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Shared Taxis (Taxi Collectif)</h3>
+              <div class="price">
+                <p><span>Varies</span></p>
+              </div>
+              <p class="fst-italic">Efficient shared transportation within cities and towns.</p>
+              <ul>
+                <li><i class="bi bi-check-circled"></i> Shared Taxis follow specific routes within cities or between towns, allowing passengers to hail them from designated taxi stands or stops.</li>
+                <li><i class="bi bi-check-circled"></i> Experience convenient and affordable travel options for your daily commute or short-distance journeys.</li>
+              </ul>
+              <p>Enjoy hassle-free travel within Tunisia's urban areas with Shared Taxis.</p>
+            </div>
+          </div>
+        </div><!-- End Shared Taxis -->
+        
+
+        <div class="swiper-slide">
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <img src="taxi_louage.jpeg" class="img-fluid" alt="Taxi Louage">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Taxi Louage</h3>
+              <div class="price">
+                <p><span>Varies</span></p>
+              </div>
+              <p class="fst-italic">Cost-effective intercity travel.</p>
+              <ul>
+                <li><i class="bi bi-check-circled"></i> Taxi Louage provides shared taxi services between cities and towns, offering a cost-effective travel option.</li>
+                <li><i class="bi bi-check-circled"></i> Share a ride with fellow passengers heading in the same direction, making your intercity travel economical and efficient.</li>
+              </ul>
+              <p>Experience hassle-free travel between cities and towns in Tunisia with Taxi Louage's convenient shared taxi services.</p>
+              <button class="consult"><a class="consult-art" href="http://www.transport.tn/fr/article/110/tarif-du-transport-non-regulier-des-personnes-par-les-voitures-louage" target="_blank">Visit website</a></button>
+
+            </div>
+          </div>
+        </div><!-- End Taxi Louage -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section>
+
+    
+      <!-- End taxi Section -->
+  </body>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+  <script>
+(function() {
+  /**
+   * taxi slider
+   */
+  new Swiper('.taxi-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
+})()
+  </script>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>transport</title>
+  </head>
+  <style>
+    :root {
+      --bl: rgba(24, 73, 221, 0.982);
+    }
+    body {
+      background: url("https://storage.googleapis.com/pod_public/1300/119150.jpg");
+      background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
+      background-position: center;
+    }
+
+
+    .trasport-h1 {
+      text-align: center;
+      color: var(--bl);
+      background: white;
+      font-size: 2.5rem;
+      border: 4px solid var(--bl);
+      width: calc(100% - 60%);
+      margin-bottom: 20px;
+      margin: 0 auto 20px auto;
+    }
+
+    .airline {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .company-img {
+      border: double;
+      border-color: blue;
+      padding: 10px;
+      border-width: 2px;
+      height: 200px;
+      width: 300px;
+    }
+    .company {
+      display: flex;
+      align-items: center; /* Alignement vertical */
+      background: rgba(167, 163, 163, 0.5);
+      padding: 20px;
+    }
+
+    .company-img-container {
+      flex: 0 0 auto; /* Empêche le conteneur de s'étirer */
+      margin-right: 20px; /* Espacement entre l'image et le texte */
+    }
+
+    .company-details {
+      flex: 1; /* Occupe tout l'espace disponible */
+    }
+    button {
+      color: blue;
+      border: 1.5px solid blue;
+      background: white;
+      text-decoration: none;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    hr {
+      border: 1px solid var(--bl);
+      margin: 5px;
+      width: calc(100% - 50%);
+    }
+    .consult {
+    border-color: blue;
+    text-decoration: none;
+    background: #fff;
+  }
+  .consult-art{
+    color: blue;
+    text-decoration: none;
+  }
+  .container {
+    position: relative; /* Pour permettre le positionnement relatif */
+}
+
+.consult {
+    position: absolute; /* Position absolue par rapport au parent */
+    top: 0; /* Déplacer le bouton vers le haut */
+    right: 0; /* Déplacer le bouton vers la droite */
+    margin: 10px; /* Marge autour du bouton */
+}
+  </style>
+
+  <body>
+
+    <div class="trasport-h1">tunisia airlines</div>
+    <button class="consult"><a class="consult-art" href="../renderer/home/tt.html" >Return to home page</a></button>
+
+    <div class="airline">
+      <div class="company">
+        <div class="company-img-container">
+          <img class="company-img" src="tunisair.png" alt="" />
+        </div>
+        <div class="company-details">
+          <div class="company-title">Tunisair</div>
+          <hr />
+          <div class="company-description">
+            The national flag carrier of Tunisia
+          </div>
+          <br />
+          <a href="https://www.tunisair.com/en-tn"><button>Visit website</button></a>
+        </div>
+      </div>
+      <div class="company">
+        <div class="company-img-container">
+          <img class="company-img" src="nouvelair.png" alt="" />
+        </div>
+        <div class="company-details">
+          <div class="company-title">Nouvelair</div>
+          <hr />
+          <div class="company-description">
+            A Tunisian airline specializing in charter and scheduled flights
+          </div>
+          <br />
+          <a href="https://www.nouvelair.com/fr"><button>Visit website</button></a>
+        </div>
+      </div>
+      <div class="company">
+        <div class="company-img-container">
+          <img class="company-img" src="tun_express.jfif" alt="" />
+        </div>
+        <div class="company-details">
+          <div class="company-title">Tunisair Express </div>
+          <hr />
+          <div class="company-description">
+            A subsidiary of Tunisair, focusing on domestic and regional flights
+          </div>
+          <br />
+          <a href="https://www.tunisairexpress.net/"><button>Visit website</button></a>
+        </div>
+      </div>
+      <div class="company">
+        <div class="company-img-container">
+          <img class="company-img" src="syphax.png" alt="" />
+        </div>
+        <div class="company-details">
+          <div class="company-title">Syphax Airlines</div>
+          <hr />
+          <div class="company-description">
+            A Tunisian airline based in Sfax, offering both domestic and international flights.
+          </div>
+          <br />
+          <a href=""><button>Visit website</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

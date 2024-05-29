@@ -1,0 +1,19 @@
+{
+  "name": "elec-v2",
+  "productName": "projet_cross1202",
+  "version": "1.0.0",
+  "description": "tourist guide",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boxicons": "^2.1.4",
+    "toastify-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.8"
+  }
+}

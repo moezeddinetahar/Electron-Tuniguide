@@ -1,0 +1,4 @@
+poweershell as admin
+1)Set-ExecutionPolicy RemoteSigned
+2)npm install electron --save-dev
+3)electron-packager . projet_cross1202 --platform=win32 --arch=x64 --out=dist
